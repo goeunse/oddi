@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cream: #EEE8DE;
+    --brown: #453838;
+    --wine: #60262E;
+    --ink: #222222
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: Pretendard, 'Noto Sans', sans-serif;
+    letter-spacing: .015em
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+button {
+    font: inherit;
+    letter-spacing: inherit;
+    cursor: pointer
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+
+header {
+    height: 64px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #45383833
+}
+
+header img {
+    width: 94px;
+    height: 35px
+}
+
+.page {
+    max-width: 1920px;
+    margin: auto;
+    container-type: inline-size;
+    overflow: hidden
+}
+
+h1,
+h2 {
+    font-family: Hahmlet, serif
+}
+
+.hero {
+    height: 40cqw;
+    position: relative
+}
+
+.hero-copy {
+    position: absolute;
+    left: 15.6%;
+    top: 25%;
+    z-index: 3
+}
+
+h1 {
+    font-size: 3.35cqw;
+    line-height: 1.5;
+    font-weight: 700
+}
+
+.hero-copy p {
+    font-size: 1.25cqw;
+    margin: .6cqw 0 2.4cqw
+}
+
+.winter-word {
+    color: var(--brown)
+}
+
+.way-word {
+    color: var(--wine)
+}
+
+.hero-offer {
+    display: inline-flex;
+    align-items: baseline;
+    gap: .7cqw;
+    white-space: nowrap
+}
+
+.offer-amount {
+    font-family: Pretendard, sans-serif;
+    font-size: 2.65cqw;
+    font-weight: 700;
+    color: var(--wine)
+}
+
+.offer-label {
+    font-family: Hahmlet, serif;
+    font-size: 1.9cqw;
+    font-weight: 600
+}
+
+.coat {
+    position: absolute;
+    width: 26%
+}
+
+.coat img {
+    width: 100%;
+    filter: drop-shadow(.8cqw 1.2cqw .6cqw #22222230)
+}
+
+.coat-two {
+    left: 40%;
+    top: 5%
+}
+
+.coat-three {
+    right: 7%;
+    top: 0
+}
+
+.coat-one {
+    left: 52%;
+    top: 21%;
+    z-index: 2
+}
+
+.star {
+    position: absolute;
+    width: 1cqw;
+    pointer-events: none
+}
+
+.s1 {
+    left: 30%;
+    top: 10%
+}
+
+.s2 {
+    left: 2.5%;
+    top: 37%
+}
+
+.s3 {
+    right: 8%;
+    top: 27%
+}
+
+.s4 {
+    left: 11%;
+    bottom: 15%
+}
+
+.s5 {
+    left: 40%;
+    bottom: 26%
+}
+
+.marquee {
+    height: 64px;
+    background: var(--wine);
+    color: var(--cream);
+    overflow: hidden;
+    display: flex;
+    align-items: center
+}
+
+.marquee-track {
+    display: flex;
+    flex: none;
+    width: max-content;
+    will-change: transform;
+    animation: roll 64s linear infinite;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 64px;
+    white-space: nowrap;
+    text-transform: uppercase
+}
+
+.marquee-track span {
+    flex-shrink: 0;
+    padding-right: .4em
+}
+
+@keyframes roll {
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+.story {
+    height: 146cqw;
+    position: relative
+}
+
+.story-image {
+    position: absolute;
+    object-fit: cover
+}
+
+.story-a {
+    left: 15.6%;
+    top: 11cqw;
+    width: 31.25%
+}
+
+.story-b {
+    left: 48.4%;
+    top: 38cqw;
+    width: 31.25%
+}
+
+.story-c {
+    left: 53.2%;
+    top: 63.2cqw;
+    width: 31.25%
+}
+
+.story-d {
+    left: 15.6%;
+    top: 79.3cqw;
+    width: 28.3%
+}
+
+.story-e {
+    left: 25%;
+    top: 102.3cqw;
+    width: 50%
+}
+
+.story-copy {
+    position: absolute;
+    font-size: 2.35cqw;
+    font-weight: 600;
+    line-height: 1.5
+}
+
+/* [1번 수정] section1 글자 색상만 #453838 로 변경 */
+.copy-a {
+    left: 61%;
+    top: 18cqw;
+    color: #453838 !important
+}
+
+.copy-b {
+    left: 15.6%;
+    top: 66cqw;
+    color: var(--wine)
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--wine);
+    color: var(--cream);
+    border: 0;
+    min-height: 7.8cqw;
+    padding: 1.5cqw 4.5cqw;
+    font-size: 1.8cqw;
+    transition: background .25s, transform .25s
+}
+
+.button:hover {
+    background: var(--brown);
+    transform: translateY(-3px)
+}
+
+.coupon {
+    position: absolute;
+    bottom: 5cqw;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.coupon:hover {
+    transform: translate(-50%, -3px)
+}
+
+.rise {
+    opacity: 1
+}
+
+.js .rise {
+    opacity: 0;
+    translate: 0 65px;
+    transition: opacity 1s ease, translate 1.2s cubic-bezier(.2, .7, .2, 1)
+}
+
+.js .rise.visible {
+    opacity: 1;
+    translate: 0 0
+}
+
+/* [2번 수정] your winter picks 칸은 전부 Hahmlet체 */
+.picks,
+.picks * {
+    font-family: 'Hahmlet', serif !important
+}
+
+.picks {
+    background: var(--brown);
+    color: var(--cream);
+    padding: 8cqw 15.6% 5cqw;
+    text-align: center;
+    position: relative
+}
+
+.picks>h2 {
+    font-size: 2.6cqw;
+    font-weight: 500;
+    margin-bottom: 5cqw
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6cqw 3.5cqw;
+    margin-bottom: 7cqw
+}
+
+.product {
+    min-width: 0
+}
+
+.product-photo {
+    position: relative;
+    aspect-ratio: 790/846;
+    overflow: hidden;
+    background: #fff
+}
+
+.product-photo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1.3s
+}
+
+.product-photo .alternate {
+    opacity: 0
+}
+
+.product.alt .alternate {
+    opacity: 1
+}
+
+.product h3 {
+    font-size: 1.05cqw;
+    font-weight: 400;
+    min-height: 3.5cqw;
+    margin-top: 1.2cqw;
+    line-height: 1.5
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    text-align: right;
+    gap: .3cqw
+}
+
+.discount {
+    color: #e65064;
+    font-size: 3.6cqw;
+    font-weight: 600;
+    line-height: 1
+}
+
+.discount small {
+    font-size: 1.7cqw
+}
+
+del {
+    display: block;
+    opacity: .45;
+    font-size: 1.2cqw;
+    margin-bottom: .35cqw
+}
+
+.price {
+    font-size: 2cqw;
+    white-space: nowrap
+}
+
+.price small {
+    font-size: 1.1cqw
+}
+
+.swatches {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 1cqw
+}
+
+.swatches button {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #eee8de66;
+    background: var(--swatch)
+}
+
+.swatches button[aria-pressed=true] {
+    outline: 1px solid var(--cream);
+    outline-offset: 3px
+}
+
+.button-light {
+    background: var(--cream);
+    color: var(--wine)
+}
+
+.button-light:hover {
+    background: #fff
+}
+
+.ps1 {
+    top: 4%;
+    left: 11%
+}
+
+.ps2 {
+    top: 43%;
+    left: 4%
+}
+
+.ps3 {
+    bottom: 9%;
+    right: 4%
+}
+
+.film {
+    height: 58cqw;
+    background: var(--cream)
+}
+
+.film-reveal {
+    height: 100%;
+    position: relative;
+    overflow: hidden
+}
+
+.js .film-reveal {
+    opacity: 0;
+    clip-path: inset(12% 12%);
+    transition: clip-path 1.6s cubic-bezier(.2, .7, .2, 1), opacity 1.2s
+}
+
+.js .film-reveal.visible {
+    opacity: 1;
+    clip-path: inset(0)
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+/* [3번 수정] 영상 글자 아래로 가게 위치 조정 */
+.film h2 {
+    padding-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cream);
+    font-weight: 400;
+    font-size: 2.35cqw;
+    line-height: 1.5;
+    text-shadow: 0 2px 20px #222;
+    z-index: 2;
+    pointer-events: none
+}
+
+/* [3번 수정] 일시정지&재생버튼 아예 없애기 */
+.video-toggle {
+    display: none !important
+}
+
+.lookbook {
+    height: 316cqw;
+    position: relative
+}
+
+.look {
+    position: absolute;
+    overflow: hidden
+}
+
+/* [4번 수정] 마지막 이미지만 있는 거(lookbook) 효과 다 빼기 */
+.look img,
+.js .look img,
+.js .look:nth-child(even) img,
+.js .look.visible img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: none !important;
+    transform: none !important;
+    transition: none !important;
+    opacity: 1 !important
+}
+
+.l1 {
+    left: 20%;
+    top: 5cqw;
+    width: 60%
+}
+
+.l2 {
+    left: 39%;
+    top: 55.5cqw;
+    width: 45.6%
+}
+
+.l3 {
+    left: 49.5%;
+    top: 95cqw;
+    width: 27%
+}
+
+.l4 {
+    left: 39%;
+    top: 135cqw;
+    width: 30.5%
+}
+
+.l5 {
+    left: 15.6%;
+    top: 167cqw;
+    width: 37%
+}
+
+.l6 {
+    left: 15.6%;
+    top: 194.7cqw;
+    width: 37%
+}
+
+.l7 {
+    left: 54.4%;
+    top: 211cqw;
+    width: 29.5%
+}
+
+.l8 {
+    left: 15.6%;
+    top: 244cqw;
+    width: 69%
+}
+
+.final-button {
+    position: absolute;
+    left: 50%;
+    bottom: 5cqw;
+    transform: translateX(-50%)
+}
+
+.final-button:hover {
+    transform: translate(-50%, -3px)
+}
+
+dialog {
+    border: 0;
+    background: var(--cream);
+    color: var(--brown);
+    padding: 50px 35px;
+    max-width: 440px;
+    width: calc(100% - 40px);
+    margin: auto;
+    text-align: center
+}
+
+dialog::backdrop {
+    background: #22222299
+}
+
+dialog h2 {
+    font-size: 26px;
+    line-height: 1.6;
+    margin: 20px 0
+}
+
+dialog p {
+    line-height: 1.7
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: .15em
+}
+
+.note {
+    font-size: 12px;
+    opacity: .65;
+    margin: 22px 0
+}
+
+dialog .button {
+    font-size: 14px;
+    min-height: 48px;
+    padding: 14px 24px
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    border: 0;
+    background: none;
+    font-size: 28px
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #b78560;
+    outline-offset: 5px
+}
+
+@media(max-width:650px) {
+    header {
+        height: 64px
+    }
+
+    header img {
+        width: 72px
+    }
+
+    .hero {
+        height: 65cqw
+    }
+
+    .hero-copy {
+        left: 8%;
+        top: 18%
+    }
+
+    h1 {
+        font-size: 5cqw
+    }
+
+    .hero-copy p {
+        font-size: 2cqw;
+        margin-bottom: 4cqw
+    }
+
+    .offer-amount {
+        font-size: 4cqw
+    }
+
+    .offer-label {
+        font-size: 2.8cqw
+    }
+
+    .coat {
+        width: 32%
+    }
+
+    .coat-two {
+        left: 38%;
+        top: 18%
+    }
+
+    .coat-three {
+        right: 1%;
+        top: 13%
+    }
+
+    .coat-one {
+        left: 52%;
+        top: 37%
+    }
+
+    .marquee,
+    .marquee-track {
+        height: 64px;
+        line-height: 64px
+    }
+
+    .story-copy {
+        font-size: 2.8cqw
+    }
+
+    .copy-a {
+        left: 57%
+    }
+
+    .button {
+        font-size: 12px;
+        min-height: 44px;
+        padding: 12px 20px
+    }
+
+    .picks {
+        padding: 10cqw 7% 8cqw
+    }
+
+    .picks>h2 {
+        font-size: 5cqw
+    }
+
+    .product-grid {
+        gap: 7cqw 4cqw;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .product h3 {
+        font-size: 11px;
+        min-height: 35px;
+        margin-top: 10px
+    }
+
+    .discount {
+        font-size: 6cqw
+    }
+
+    .discount small {
+        font-size: 3cqw
+    }
+
+    del {
+        font-size: 10px
+    }
+
+    .price {
+        font-size: 3.7cqw
+    }
+
+    .price small {
+        font-size: 10px
+    }
+
+    .swatches {
+        margin-top: 13px
+    }
+
+    .film h2 {
+        font-size: 4cqw;
+        top: 72%
+    }
+
+    .lookbook {
+        height: 324cqw
+    }
+
+    .film {
+        height: 70cqw
+    }
+
+    .star {
+        width: 1.5cqw
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important
+    }
+
+    .js .rise {
+        opacity: 1;
+        translate: none
+    }
+
+    .js .look,
+    .js .film-reveal {
+        opacity: 1;
+        clip-path: none
+    }
+
+    .js .look img,
+    .js .look:nth-child(even) img {
+        clip-path: none;
+        transform: none
+    }
+}
