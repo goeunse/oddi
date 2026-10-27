@@ -1,0 +1,1022 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cream: #EEE8DE;
+    --brown: #453838;
+    --wine: #60262E;
+    --ink: #222222
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: Pretendard, 'Noto Sans', sans-serif;
+    letter-spacing: .015em
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+button {
+    font: inherit;
+    letter-spacing: inherit;
+    cursor: pointer
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+
+header {
+    height: 64px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #45383833
+}
+
+header img {
+    width: 94px;
+    height: 35px
+}
+
+.page {
+    max-width: 1920px;
+    margin: auto;
+    container-type: inline-size;
+    overflow: hidden
+}
+
+h1,
+h2 {
+    font-family: Hahmlet, serif
+}
+
+.hero {
+    height: 40cqw;
+    position: relative
+}
+
+.hero-copy {
+    position: absolute;
+    left: 15.6%;
+    top: 25%;
+    z-index: 3
+}
+
+h1 {
+    font-size: 3.35cqw;
+    line-height: 1.5;
+    font-weight: 700
+}
+
+.hero-copy p {
+    font-size: 1.25cqw;
+    margin: .6cqw 0 2.4cqw
+}
+
+.winter-word {
+    color: var(--brown)
+}
+
+.way-word {
+    color: var(--wine)
+}
+
+.hero-offer {
+    display: inline-flex;
+    align-items: baseline;
+    gap: .7cqw;
+    white-space: nowrap
+}
+
+.offer-amount {
+    font-family: Pretendard, sans-serif;
+    font-size: 2.65cqw;
+    font-weight: 700;
+    color: var(--wine)
+}
+
+.offer-label {
+    font-family: Hahmlet, serif;
+    font-size: 1.9cqw;
+    font-weight: 600
+}
+
+.coat {
+    position: absolute;
+    width: 26%
+}
+
+.coat img {
+    width: 100%;
+    filter: drop-shadow(.8cqw 1.2cqw .6cqw #22222230)
+}
+
+.coat-two {
+    left: 40%;
+    top: 5%
+}
+
+.coat-three {
+    right:8%;
+    top: 7%
+}
+
+.coat-one {
+    left: 52%;
+    top: 21%;
+    z-index: 2
+}
+
+.star {
+    position: absolute;
+    width: 1cqw;
+    pointer-events: none
+}
+
+.s1 {
+    left: 30%;
+    top: 10%
+}
+
+.s2 {
+    left: 2.5%;
+    top: 37%
+}
+
+.s3 {
+    right: 8%;
+    top: 27%
+}
+
+.s4 {
+    left: 11%;
+    bottom: 15%
+}
+
+.s5 {
+    left: 40%;
+    bottom: 26%
+}
+
+.marquee {
+    height: 64px;
+    background: var(--wine);
+    color: var(--cream);
+    overflow: hidden;
+    display: flex;
+    align-items: center
+}
+
+.marquee-track {
+    display: flex;
+    flex: none;
+    width: max-content;
+    will-change: transform;
+    animation: roll 64s linear infinite;
+    font-family: 'Hahmlet', serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 64px;
+    white-space: nowrap;
+    text-transform: uppercase
+}
+
+.marquee-track span {
+    flex-shrink: 0;
+    padding-right: .4em
+}
+
+@keyframes roll {
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+.story {
+    height: 146cqw;
+    position: relative
+}
+
+.story-image {
+    position: absolute;
+    object-fit: cover
+}
+
+.story-a {
+    left: 15.6%;
+    top: 11cqw;
+    width: 31.25%
+}
+
+.story-b {
+    left: 48.4%;
+    top: 38cqw;
+    width: 31.25%
+}
+
+.story-c {
+    left: 53.2%;
+    top: 63.2cqw;
+    width: 31.25%
+}
+
+.story-d {
+    left: 15.6%;
+    top: 79.3cqw;
+    width: 28.3%
+}
+
+.story-e {
+    left: 25%;
+    top: 102.3cqw;
+    width: 50%
+}
+
+.story-copy {
+    position: absolute;
+    font-size: 2.35cqw;
+    font-weight: 600;
+    line-height: 1.5
+}
+
+/* [1번 수정] section1 글자 색상만 #453838 로 변경 */
+.copy-a {
+    left: 61%;
+    top: 18cqw;
+    color: #453838 !important
+}
+
+.copy-b {
+    left: 15.6%;
+    top: 66cqw;
+    color: var(--wine)
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--wine);
+    color: var(--cream);
+    border: 0;
+    min-height: 7.8cqw;
+    padding: 1.5cqw 4.5cqw;
+    font-size: 1.8cqw;
+    transition: background .25s, transform .25s
+}
+
+.button:hover {
+    background: var(--brown);
+    transform: translateY(-3px)
+}
+
+.coupon {
+    position: absolute;
+    bottom: 5cqw;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.coupon:hover {
+    transform: translate(-50%, -3px)
+}
+
+.rise {
+    opacity: 1
+}
+
+.js .rise {
+    opacity: 0;
+    translate: 0 65px;
+    transition: opacity 1s ease, translate 1.2s cubic-bezier(.2, .7, .2, 1)
+}
+
+.js .rise.visible {
+    opacity: 1;
+    translate: 0 0
+}
+
+/* [2번 수정] your winter picks 칸은 전부 Hahmlet체 */
+.picks,
+.picks * {
+    font-family: 'Hahmlet', serif !important
+}.picks .button-light {
+    font-family: 'Pretendard', sans-serif !important;
+}
+.picks {
+    background: var(--brown);
+    color: var(--cream);
+    padding: 8cqw 15.6% 5cqw;
+    text-align: center;
+    position: relative
+}
+
+.picks>h2 {
+    font-size: 2.6cqw;
+    font-weight: 500;
+    margin-bottom: 5cqw
+}
+
+
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6cqw 3.5cqw;
+    margin-bottom: 7cqw
+}
+
+.product {
+    min-width: 0
+}
+
+.product-photo {
+    position: relative;
+    aspect-ratio: 790/846;
+    overflow: hidden;
+    background: #fff
+}
+
+.product-photo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1.3s
+}
+
+.product-photo .alternate {
+    opacity: 0
+}
+
+.product.alt .alternate {
+    opacity: 1
+}
+
+.product h3 {
+    font-size: 1.05cqw;
+    font-weight: 400;
+    min-height: 3.5cqw;
+    margin-top: 1.2cqw;
+    line-height: 1.5
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    text-align: right;
+    gap: .3cqw
+}
+
+.discount {
+    color: #e65064;
+    font-size: 3.6cqw;
+    font-weight: 600;
+    line-height: 1
+}
+
+.discount small {
+    font-size: 1.7cqw
+}
+
+del {
+    display: block;
+    opacity: .45;
+    font-size: 1.2cqw;
+    margin-bottom: .35cqw
+}
+
+.price {
+    font-size: 2cqw;
+    white-space: nowrap
+}
+
+.price small {
+    font-size: 1.1cqw
+}
+
+.swatches {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 1cqw
+}
+
+.swatches button {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #eee8de66;
+    background: var(--swatch)
+}
+
+.swatches button[aria-pressed=true] {
+    outline: 1px solid var(--cream);
+    outline-offset: 3px
+}
+
+.button-light {
+    background: var(--cream);
+    color: var(--wine)
+}
+
+.button-light:hover {
+    background: #fff
+}
+
+.ps1 {
+    top: 4%;
+    left: 11%
+}
+
+.ps2 {
+    top: 43%;
+    left: 4%
+}
+
+.ps3 {
+    bottom: 9%;
+    right: 4%
+}
+
+.film {
+    height: 58cqw;
+    background: var(--cream)
+}
+
+.film-reveal {
+    height: 100%;
+    position: relative;
+    overflow: hidden
+}
+
+.js .film-reveal {
+    opacity: 0;
+    clip-path: inset(12% 12%);
+    transition: clip-path 4.8s cubic-bezier(.45, 0, .2, 1), opacity 1.8s
+}
+
+.js .film-reveal.visible {
+    opacity: 1;
+    clip-path: inset(0)
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+/* [3번 수정] 영상 글자 아래로 가게 위치 조정 */
+.film h2 {
+    padding-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cream);
+    font-weight: 400;
+    font-size: 2.35cqw;
+    line-height: 1.5;
+    text-shadow: 0 2px 20px #222;
+    z-index: 2;
+    pointer-events: none
+}
+
+/* [3번 수정] 일시정지&재생버튼 아예 없애기 */
+.video-toggle {
+    display: none !important
+}
+
+.lookbook {
+    height: 316cqw;
+    position: relative
+}
+
+.look {
+    position: absolute;
+    overflow: hidden
+}
+
+/* [4번 수정] 마지막 이미지만 있는 거(lookbook) 효과 다 빼기 */
+.look img,
+.js .look img,
+.js .look:nth-child(even) img,
+.js .look.visible img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: none !important;
+    transform: none !important;
+    transition: none !important;
+    opacity: 1 !important
+}
+
+.l1 {
+    left: 20%;
+    top: 5cqw;
+    width: 60%
+}
+
+.l2 {
+    left: 39%;
+    top: 55.5cqw;
+    width: 45.6%
+}
+
+.l3 {
+    left: 49.5%;
+    top: 95cqw;
+    width: 27%
+}
+
+.l4 {
+    left: 39%;
+    top: 135cqw;
+    width: 30.5%
+}
+
+.l5 {
+    left: 15.6%;
+    top: 167cqw;
+    width: 37%
+}
+
+.l6 {
+    left: 15.6%;
+    top: 194.7cqw;
+    width: 37%
+}
+
+.l7 {
+    left: 54.4%;
+    top: 211cqw;
+    width: 29.5%
+}
+
+.l8 {
+    left: 15.6%;
+    top: 244cqw;
+    width: 69%
+}
+
+.final-button {
+    position: absolute;
+    left: 50%;
+    bottom: 5cqw;
+    transform: translateX(-50%)
+}
+
+.final-button:hover {
+    transform: translate(-50%, -3px)
+}
+
+dialog {
+    border: 0;
+    background: var(--cream);
+    color: var(--brown);
+    padding: 50px 35px;
+    max-width: 440px;
+    width: calc(100% - 40px);
+    margin: auto;
+    text-align: center
+}
+
+dialog::backdrop {
+    background: #22222299
+}
+
+dialog h2 {
+    font-size: 26px;
+    line-height: 1.6;
+    margin: 20px 0
+}
+
+dialog p {
+    line-height: 1.7
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: .15em
+}
+
+.note {
+    font-size: 12px;
+    opacity: .65;
+    margin: 22px 0
+}
+
+dialog .button {
+    font-size: 14px;
+    min-height: 48px;
+    padding: 14px 24px
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    border: 0;
+    background: none;
+    font-size: 28px
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #b78560;
+    outline-offset: 5px
+}
+
+@media(max-width:650px) {
+    header {
+        height: 64px
+    }
+
+    header img {
+        width: 72px
+    }
+
+    .hero {
+        height: 65cqw
+    }
+
+    .hero-copy {
+        left: 8%;
+        top: 18%
+    }
+
+    h1 {
+        font-size: 5cqw
+    }
+
+    .hero-copy p {
+        font-size: 2cqw;
+        margin-bottom: 4cqw
+    }
+
+    .offer-amount {
+        font-size: 4cqw
+    }
+
+    .offer-label {
+        font-size: 2.8cqw
+    }
+
+    .coat {
+        width: 32%
+    }
+
+    .coat-two {
+        left: 38%;
+        top: 18%
+    }
+
+    .coat-three {
+        right: 1%;
+        top: 13%
+    }
+
+    .coat-one {
+        left: 52%;
+        top: 37%
+    }
+
+    .marquee,
+    .marquee-track {
+        height: 64px;
+        line-height: 64px
+    }
+
+    .story-copy {
+        font-size: 2.8cqw
+    }
+
+    .copy-a {
+        left: 57%
+    }
+
+    .button {
+        font-size: 12px;
+        min-height: 44px;
+        padding: 12px 20px
+    }
+
+    .picks {
+        padding: 10cqw 7% 8cqw
+    }
+
+    .picks>h2 {
+        font-size: 5cqw
+    }
+
+    .product-grid {
+        gap: 7cqw 4cqw;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .product h3 {
+        font-size: 11px;
+        min-height: 35px;
+        margin-top: 10px
+    }
+
+    .discount {
+        font-size: 6cqw
+    }
+
+    .discount small {
+        font-size: 3cqw
+    }
+
+    del {
+        font-size: 10px
+    }
+
+    .price {
+        font-size: 3.7cqw
+    }
+
+    .price small {
+        font-size: 10px
+    }
+
+    .swatches {
+        margin-top: 13px
+    }
+
+    .film h2 {
+        font-size: 4cqw;
+        top: 72%
+    }
+
+    .lookbook {
+        height: 324cqw
+    }
+
+    .film {
+        height: 70cqw
+    }
+
+    .star {
+        width: 1.5cqw
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important
+    }
+
+    .js .rise {
+        opacity: 1;
+        translate: none
+    }
+
+    .js .look,
+    .js .film-reveal {
+        opacity: 1;
+        clip-path: none
+    }
+
+    .js .look img,
+    .js .look:nth-child(even) img {
+        clip-path: none;
+        transform: none
+    }
+}
+/* Requested lookbook background and decoration. Photo coordinates stay unchanged. */
+.lookbook {
+    isolation: isolate;
+    background: linear-gradient(180deg, #eee8de 0%, #eee8de 55%, #e6ded4 63%, #b99e98 79%, #8d6262 90%, #60262e 100%);
+}
+.lookbook::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+    opacity: .34;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23000' filter='url(%23grain)' opacity='.85' d='M0 0h180v180H0z'/%3E%3C/svg%3E");
+}
+.lookbook-star {
+    position: absolute;
+    left: 29.5%;
+    top: 127cqw;
+    width: 14%;
+    z-index: -1;
+    pointer-events: none;
+    animation: lookbook-spin 32s linear infinite;
+}
+@keyframes lookbook-spin { to { transform: rotate(360deg); } }
+.winter-treats {
+    background: #6b5353;
+    color: var(--cream);
+    padding: 10cqw 15.6% 5cqw;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5cqw;
+    font-family: 'Hahmlet', serif;
+}
+.treats-copy h2 { font-size: 3cqw; line-height: 1.5; font-weight: 500; }
+.treats-copy p { font-size: 1.25cqw; line-height: 1.9; margin-top: 6cqw; }
+.treats-tickets { display: flex; gap: 1.7cqw; align-items: start; }
+.treat-ticket {
+    --ticket-bg: #e3d9c3;
+    --ticket-ink: #60262e;
+    position: relative;
+    width: 50%;
+    aspect-ratio: 670 / 1044;
+    border: 0;
+    color: var(--ticket-ink);
+    font-family: 'Hahmlet', serif;
+    background: radial-gradient(circle at 0 50%, transparent 0 8%, var(--ticket-bg) 8.3%) left / 51% 100% no-repeat,
+                radial-gradient(circle at 100% 50%, transparent 0 8%, var(--ticket-bg) 8.3%) right / 51% 100% no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.3cqw .7cqw 2cqw;
+}
+.treat-ticket::before, .treat-ticket::after { content: ""; position: absolute; left: 7%; right: 7%; height: 36%; border: 1px solid currentColor; pointer-events: none; }
+.treat-ticket::before { top: 7%; border-bottom: 0; }
+.treat-ticket::after { bottom: 7%; border-top: 0; }
+.ticket-wine { --ticket-bg: #60262e; --ticket-ink: #e3d9c3; }
+.ticket-label { font-size: .95cqw; }
+.treat-ticket strong { font-size: 5.5cqw; font-weight: 500; line-height: 1.1; margin-top: 2.2cqw; white-space: nowrap; letter-spacing: -.07em; }
+.treat-ticket strong small { font-size: 1.2cqw; letter-spacing: 0; }
+.treat-ticket strong span { font-size: 2.7cqw; }
+.treat-ticket .shipping-title { font-size: 3.2cqw; margin-top: 3cqw; margin-bottom: 1cqw; letter-spacing: 0; }
+.ticket-caption { font-size: 1cqw; margin-top: 1.5cqw; }
+.ticket-divider { position: absolute; top: 50%; left: 16%; right: 16%; border-top: 1px dashed currentColor; opacity: .4; }
+.ticket-action { margin-top: auto; font-size: .95cqw; display: flex; flex-direction: column; align-items: center; gap: 1cqw; }
+.ticket-arrow { display: block; height: 2.5cqw; border-left: 1px solid currentColor; position: relative; margin-bottom: 1cqw; }
+.ticket-arrow::after { content: ""; width: 1.2cqw; height: 1.2cqw; position: absolute; left: -1px; bottom: 0; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: translateX(-50%) rotate(45deg); }
+.treat-ticket:hover { filter: brightness(1.05); }
+.site-footer { background: var(--brown); color: var(--cream); padding: 4cqw 15.6%; display: grid; grid-template-columns: 1fr auto; gap: 3cqw; }
+.footer-brand { font-family: 'Hahmlet', serif; font-size: 2.5cqw; }
+.site-footer p { font-size: 12px; line-height: 1.8; opacity: .75; margin-top: 12px; }
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 20px; align-content: start; font-size: 12px; }
+.site-footer small { grid-column: 1 / -1; font-size: 10px; opacity: .6; }
+@media(max-width:650px) {
+    .winter-treats { padding: 10cqw 8%; gap: 6cqw; grid-template-columns: 1fr; }
+    .treats-copy h2 { font-size: 5cqw; }
+    .treats-copy p { font-size: 12px; margin-top: 4cqw; }
+    .treats-tickets { gap: 4cqw; }
+    .treat-ticket { padding: 8cqw 2cqw 5cqw; }
+    .ticket-label, .ticket-caption, .ticket-action { font-size: 2.5cqw; }
+    .treat-ticket strong { font-size: 13cqw; margin-top: 5cqw; }
+    .treat-ticket strong small { font-size: 3cqw; }
+    .treat-ticket strong span { font-size: 7cqw; }
+    .treat-ticket .shipping-title { font-size: 8cqw; margin-top: 7cqw; margin-bottom: 2cqw; }
+    .ticket-caption { margin-top: 3cqw; }
+    .ticket-action { gap: 3cqw; }
+    .ticket-arrow { height: 6cqw; margin-bottom: 2cqw; }
+    .ticket-arrow::after { width: 3cqw; height: 3cqw; }
+    .site-footer { padding: 8cqw; grid-template-columns: 1fr; gap: 24px; }
+    .footer-brand { font-size: 24px; }
+}
+
+/* Coupon artwork, lookbook lettering and slow hero decoration rotation. */
+.hero .star { animation: lookbook-spin 48s linear infinite; transform-origin: center; }
+.lookbook-copy { position: absolute; font-family: 'Hahmlet', serif; font-weight: 600; font-size: 2.7cqw; line-height: 1.5; }
+.lookbook-warmth { left: 15.6%; top: 95cqw; color: var(--wine); }
+.lookbook-stay { left: 15.6%; top: 230cqw; color: var(--cream); }
+.lookbook-wordmark { position: absolute; left: 54.4%; top: 203.5cqw; width: 16%; }
+.treat-ticket { display: block; padding: 0; background: none; }
+.treat-ticket::before, .treat-ticket::after { content: none; }
+.ticket-art { width: 100%; height: auto; }
+.treat-ticket > .ticket-arrow { position: absolute; left: 50%; top: 79%; height: 10%; margin: 0; pointer-events: none; }
+.treat-ticket:hover > .ticket-arrow, .treat-ticket:focus-visible > .ticket-arrow { animation: coupon-arrow-down 1.2s ease-in-out infinite; }
+@keyframes coupon-arrow-down { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(40%); } }
+
+/* Gentle mixed rotation in the hero and twinkling Winter Picks stars. */
+.hero .s2,
+.hero .s4 { animation-direction: reverse; }
+.picks > .star { animation: picks-twinkle 4.8s ease-in-out infinite; }
+.picks > .ps2 { animation-delay: -1.6s; }
+.picks > .ps3 { animation-delay: -3.2s; }
+@keyframes picks-twinkle {
+    0%, 100% { opacity: .15; }
+    50% { opacity: 1; }
+}
+/* Snow stays within the lower gradient, behind the photographs and text. */
+.lookbook .final-button { background: var(--cream); color: var(--wine); }
+.lookbook .final-button:hover { background: var(--cream); color: var(--wine); }
+.lookbook-snow { position: absolute; top: 62%; bottom: 0; left: 0; right: 0; overflow: hidden; z-index: -1; pointer-events: none; }
+.snowflake { position: absolute; left: var(--x); top: -4cqw; width: var(--size); height: var(--size); border-radius: 50%; background: radial-gradient(circle, #fffaf0 0%, #fffaf0bb 25%, #fffaf000 72%); animation: lookbook-snowfall var(--duration) linear var(--delay) infinite; }
+.snowflake-star { border-radius: 0; background: center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2v20M2 12h20M5 5l14 14M5 19L19 5' fill='none' stroke='%23fff8e9' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E"); filter: drop-shadow(0 0 .2cqw #fff8e980); }
+@keyframes lookbook-snowfall {
+    0% { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 0; }
+    8% { opacity: .75; }
+    85% { opacity: .65; }
+    100% { transform: translate3d(var(--drift), 130cqw, 0) rotate(100deg); opacity: 0; }
+}
+@media(prefers-reduced-motion:reduce) {
+    .snowflake { top: calc(var(--x) * .95); opacity: .6; }
+}
+
+/* Use the existing brand logo in the footer. */
+.site-footer .footer-brand { display: inline-block; }
+.site-footer .footer-brand img { width: clamp(64px, 7cqw, 110px); height: auto; filter: brightness(0) invert(1); opacity: .9; }
+
+/* Keep the grain beneath all lookbook content; reveal only the content wrappers. */
+.lookbook::before { background-size: 180px 180px; }
+.lookbook .look,
+.lookbook .lookbook-copy,
+.lookbook .lookbook-wordmark { z-index: 1; }
+.lookbook.reveal-ready .look,
+.lookbook.reveal-ready .lookbook-copy,
+.lookbook.reveal-ready .lookbook-wordmark {
+    opacity: 0;
+    translate: 0 28px;
+    transition: none;
+}
+.lookbook.reveal-ready .lookbook-copy.is-revealed { transition-delay: .14s; }
+.lookbook.reveal-ready .lookbook-wordmark.is-revealed { transition-delay: .1s; }
+.lookbook.reveal-ready .is-revealed {
+    transition: opacity 1.15s ease, translate 1.35s cubic-bezier(.22, 1, .36, 1);
+    opacity: 1;
+    translate: 0 0;
+}
+@media (prefers-reduced-motion: reduce) {
+    .lookbook.reveal-ready .look,
+    .lookbook.reveal-ready .lookbook-copy,
+    .lookbook.reveal-ready .lookbook-wordmark {
+        opacity: 1;
+        translate: none;
+        transition: none;
+    }
+}
+/* Extra asterisk accents in the product section's outer margins. */
+.picks > .ps4 { left: 25%; top: 4%; width: 1.5cqw; animation-delay: -.6s; }
+.picks > .ps5 { right: 22%; top: 6%; width: 1.1cqw; animation-delay: -2.4s; }
+.picks > .ps7 { left: 7%; top: 27%; width: 1.6cqw; animation-delay: -3.6s; }
+.picks > .ps8 { right: 9%; top: 48%; width: 1.3cqw; animation-delay: -2s; }
+.picks > .ps10 { right: 5%; top: 73%; width: 1.5cqw; animation-delay: -.3s; }
+.picks > .ps11 { left: 23%; bottom: 5%; width: 1.3cqw; animation-delay: -2.8s; }
+@media (max-width: 650px) {
+    .picks > .ps2, .picks > .ps7 { left: 2%; }
+    .picks > .ps3, .picks > .ps8, .picks > .ps10 { right: 2%; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .picks > .star { animation: none; opacity: .65; }
+}
+/* Let the film appear first, then gently fade in its caption. */
+.js .film-reveal h2 { opacity: 0; }
+.js .film-reveal.visible h2 {
+    opacity: 1;
+    transition: opacity 1.6s ease .65s;
+}
+@media (prefers-reduced-motion: reduce) {
+    .js .film-reveal h2,
+    .js .film-reveal.visible h2 { opacity: 1; transition: none; }
+}
+/* Shared coupon terms directly beneath both tickets. */
+.treats-tickets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.treats-tickets .treat-ticket { width: 100%; }
+.coupon-note {
+    font-family: 'Pretendard', sans-serif;
+    grid-column: 1 / -1;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+    text-align: center;
+    word-break: keep-all;
+    color: var(--cream);
+    opacity: .85;
+}
+@media (max-width: 650px) {
+    .coupon-note { font-size: 13px; }
+}
